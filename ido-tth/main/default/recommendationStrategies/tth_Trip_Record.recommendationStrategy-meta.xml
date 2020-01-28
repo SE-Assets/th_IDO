@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>tth_Trip__c</contextRecordType>
+    <label>Trip Record</label>
+    <union>
+        <label>Output</label>
+        <name>Output_a6e1053a739b4f0cbdf07dcabadd8a97</name>
+    </union>
+</RecommendationStrategy>

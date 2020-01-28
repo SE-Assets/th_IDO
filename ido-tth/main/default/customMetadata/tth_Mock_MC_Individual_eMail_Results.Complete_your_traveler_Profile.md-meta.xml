@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Complete your traveler Profile</label>
+    <protected>false</protected>
+    <values>
+        <field>Bounced__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Clicked__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Date_Sent__c</field>
+        <value xsi:type="xsd:date">2019-09-02</value>
+    </values>
+    <values>
+        <field>Opened__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">30.0</value>
+    </values>
+    <values>
+        <field>eMail_Name__c</field>
+        <value xsi:type="xsd:string">Complete your traveler Profile</value>
+    </values>
+</CustomMetadata>

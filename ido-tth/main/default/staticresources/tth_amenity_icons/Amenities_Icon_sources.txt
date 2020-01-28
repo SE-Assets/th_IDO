@@ -1,0 +1,30 @@
+* Hotel
+    * -High Floor - https://flaticons.net/customize.php?dir=Landmark&icon=Building-Add.png-
+    * -Views - https://flaticons.net/customize.php?dir=Miscellaneous&icon=Binocular.png-
+    * -Club Access - https://flaticons.net/customize.php?dir=Shapes&icon=Shape-Star2.png-
+    * -Gym - https://flaticons.net/customize.php?dir=Sports&icon=Weight-Lifting.png-
+    * -Pool - https://flaticons.net/customize.php?dir=Miscellaneous&icon=Swimming-Pool.png-
+    * -Mini bar - https://flaticons.net/customize.php?dir=Miscellaneous&icon=Bar.png-
+
+
+* Airline
+    * Seat Location
+        * Aisle - https://thenounproject.com/term/seat/2522171/
+        * Middle - https://thenounproject.com/term/seat/2522171/
+        * Window - https://thenounproject.com/search/?q=airplane%20window&i=120038
+    * -Powered Seat - https://flaticons.net/customize.php?dir=Miscellaneous&icon=Plug.png-
+    * Bulkhead Seat
+    * -Exit Row Seat - https://flaticons.net/customize.php?dir=Mobile%20Application&icon=Logout.png-
+    * Class (1st, Business, Economy)
+    * -Meals included / available - https://flaticons.net/customize.php?dir=Food&icon=Cutlery-Fork-Knife.png-
+    * Aircraft model?
+    * -Wifi - https://flaticons.net/customize.php?dir=Application&icon=Wifi.png-
+* Car Rental
+    * -Unlimited Mileage - https://flaticons.net/customize.php?dir=Transportation&icon=Meter-01.png-
+    * -Fuel option/included - https://flaticons.net/customize.php?dir=Miscellaneous&icon=Fuel-Station.png-
+    * -In Terminal Pick up- https://flaticons.net/customize.php?dir=Miscellaneous&icon=Aeroplane.png-
+    * -Air conditioning - https://thenounproject.com/search/?q=snow%20flake&i=140023-
+    * -USB Connector - https://flaticons.net/customize.php?dir=Science%20and%20Technology&icon=USB.png-
+    * -Bluetooth - https://flaticons.net/customize.php?dir=Mobile%20Application&icon=Bluetooth.png-
+    * -Cruise Control -https://flaticons.net/customize.php?dir=Miscellaneous&icon=Gauge.png-
+    * -Reversing Camera - https://flaticons.net/customize.php?dir=Mobile%20Application&icon=Camera.png-

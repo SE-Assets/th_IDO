@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Personal_Traveler__c</fullName>
+    <description>Guest travels with us for personal reasons (e.g. non-business)</description>
+    <externalId>false</externalId>
+    <label>Personal Traveler</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>tth_Yes_No</valueSetName>
+    </valueSet>
+</CustomField>

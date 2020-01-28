@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Geography__c</fullName>
+    <description>Used for trip selection and suggestions</description>
+    <externalId>false</externalId>
+    <label>Geography</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>tth_Trip_Geography</valueSetName>
+    </valueSet>
+</CustomField>

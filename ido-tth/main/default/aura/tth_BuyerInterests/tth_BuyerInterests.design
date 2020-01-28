@@ -1,0 +1,37 @@
+<design:component label="TTH Guest Profile Interests">
+
+	  <design:attribute name="iconName"
+											label="Icon Name"
+											default="standard:endorsement"
+											description="Lightning Design Icon name"/>
+
+		<design:attribute name="iconColor"
+											label="Icon Color"
+											default="#8B9AE3"
+											description="HEX code for the icon color"/>
+
+	  <design:attribute name="interest1" label="Interest 1 Title"></design:attribute>
+    <design:attribute name="image1" label="Interest 1 Image"></design:attribute>
+    <design:attribute name="strength1" label="Interest 1 Strength"></design:attribute>
+    <design:attribute name="count1" label="Interest 1 Purchase Count"></design:attribute>
+		<design:attribute name="showPurchaseCount1" label="Show First Purchase Count" default="false" description="Whether to show the 1st purchase count element"/>
+
+    <design:attribute name="interest2" label="Interest 2 Title"></design:attribute>
+    <design:attribute name="image2" label="Interest 2 Image"></design:attribute>
+    <design:attribute name="strength2" label="Interest 2 Strength"></design:attribute>
+    <design:attribute name="count2" label="Interest 2 Purchase Count"></design:attribute>
+		<design:attribute name="showPurchaseCount2" label="Show Second Purchase Count" default="false" description="Whether to show the 2nd purchase count element"/>
+
+    <design:attribute name="interest3" label="Interest 3 Title"></design:attribute>
+    <design:attribute name="image3" label="Interest 3 Image"></design:attribute>
+    <design:attribute name="strength3" label="Interest 3 Strength"></design:attribute>
+    <design:attribute name="count3" label="Interest 3 Purchase Count"></design:attribute>
+		<design:attribute name="showPurchaseCount3" label="Show Third Purchase Count" default="false" description="Whether to show the 3rd purchase count element"/>
+
+    <design:attribute name="interest4" label="Interest 4 Title"></design:attribute>
+    <design:attribute name="image4" label="Interest 4 Image"></design:attribute>
+    <design:attribute name="strength4" label="Interest 4 Strength"></design:attribute>
+    <design:attribute name="count4" label="Interest 4 Purchase Count"></design:attribute>
+		<design:attribute name="showPurchaseCount4" label="Show Fourth Purchase Count" default="false" description="Whether to show the 4th purchase count element"/>
+
+</design:component>

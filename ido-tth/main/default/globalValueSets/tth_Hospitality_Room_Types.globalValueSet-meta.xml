@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Single</fullName>
+        <default>false</default>
+        <label>Single</label>
+    </customValue>
+    <customValue>
+        <fullName>Double</fullName>
+        <default>false</default>
+        <label>Double</label>
+    </customValue>
+    <customValue>
+        <fullName>Queen</fullName>
+        <default>false</default>
+        <label>Queen</label>
+    </customValue>
+    <customValue>
+        <fullName>King</fullName>
+        <default>false</default>
+        <label>King</label>
+    </customValue>
+    <customValue>
+        <fullName>Twin</fullName>
+        <default>false</default>
+        <label>Twin</label>
+    </customValue>
+    <customValue>
+        <fullName>Studio</fullName>
+        <default>false</default>
+        <label>Studio</label>
+    </customValue>
+    <customValue>
+        <fullName>Connecting Rooms</fullName>
+        <default>false</default>
+        <label>Connecting Rooms</label>
+    </customValue>
+    <customValue>
+        <fullName>Adjoining Rooms</fullName>
+        <default>false</default>
+        <label>Adjoining Rooms</label>
+    </customValue>
+    <customValue>
+        <fullName>Adjacent Rooms</fullName>
+        <default>false</default>
+        <label>Adjacent Rooms</label>
+    </customValue>
+    <customValue>
+        <fullName>Junior Suite</fullName>
+        <default>false</default>
+        <label>Junior Suite</label>
+    </customValue>
+    <customValue>
+        <fullName>Master Suite</fullName>
+        <default>false</default>
+        <label>Master Suite</label>
+    </customValue>
+    <masterLabel>Hospitality Room Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

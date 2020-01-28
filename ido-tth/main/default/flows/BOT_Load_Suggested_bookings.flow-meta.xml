@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Look up the suggested bookings for an impacted, existing booking. Looks for tth_Suggested_Booking__c objects that are related to the passed in Booking ID</description>
+    <interviewLabel>BOT - Load Suggested bookings {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BOT - Load Suggested bookings</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Load_Suggested_Bookings</name>
+        <label>Load Suggested Bookings</label>
+        <locationX>193</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <filters>
+            <field>tth_Related_Booking__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>objImpactedBooking.Id</elementReference>
+            </value>
+        </filters>
+        <object>tth_Suggested_Booking__c</object>
+        <outputReference>objSuggestingBookings</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>tth_Booking_Start__c</queriedFields>
+        <queriedFields>tth_Booking_End__c</queriedFields>
+        <queriedFields>tth_Time__c</queriedFields>
+        <queriedFields>tth_Flight_Number__c</queriedFields>
+        <queriedFields>tth_Location__c</queriedFields>
+        <queriedFields>tth_Amenities_pl__c</queriedFields>
+        <queriedFields>tth_Requests__c</queriedFields>
+        <queriedFields>tth_Add_ons__c</queriedFields>
+        <queriedFields>tth_Allocated_Room__c</queriedFields>
+        <queriedFields>tth_Allocated_Seat__c</queriedFields>
+        <queriedFields>tth_Change_Summary__c</queriedFields>
+        <queriedFields>tth_Days_Ago__c</queriedFields>
+        <queriedFields>tth_Room_Type__c</queriedFields>
+        <queriedFields>tth_Travel_Class__c</queriedFields>
+        <queriedFields>tth_Fare_Basis_Code__c</queriedFields>
+        <queriedFields>tth_Bot_Summary__c</queriedFields>
+        <queriedFields>tth_Status__c</queriedFields>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Load_Suggested_Bookings</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>objImpactedBooking</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>tth_Booking__c</objectType>
+    </variables>
+    <variables>
+        <name>objSuggestingBookings</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>tth_Suggested_Booking__c</objectType>
+    </variables>
+</Flow>

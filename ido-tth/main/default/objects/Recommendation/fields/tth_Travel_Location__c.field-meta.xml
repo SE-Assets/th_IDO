@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Travel_Location__c</fullName>
+    <description>What destinations is this recommendation for?</description>
+    <externalId>false</externalId>
+    <label>Travel Location</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

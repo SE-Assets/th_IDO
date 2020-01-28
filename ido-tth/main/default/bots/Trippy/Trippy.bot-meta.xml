@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <botMlDomain>
+        <label>Trippy</label>
+        <mlIntents>
+            <developerName>Loyalty_Status_Check</developerName>
+            <label>Loyalty Status Check</label>
+            <mlIntentUtterances>
+                <utterance>What&#39;s my points balance</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>How many points do I have</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>What&#39;s my loyalty status</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>How many points do I need</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>Points to next level</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>Check my loyalty status</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>New_Booking</developerName>
+            <label>New Booking</label>
+            <mlIntentUtterances>
+                <utterance>want to go to</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>New Trip</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>Explore the world</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>New Booking</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>Go somewhere</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Resend_Itinerary</developerName>
+            <label>Resend Itinerary</label>
+            <mlIntentUtterances>
+                <utterance>copy of my reservation</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>can you resend</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <utterance>copy of my booking</utterance>
+            </mlIntentUtterances>
+        </mlIntents>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>tripVibe</developerName>
+            <extractionType>Value</extractionType>
+            <label>tripVibe</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Trip_Name</developerName>
+            <extractionType>Value</extractionType>
+            <label>Trip Name</label>
+        </mlSlotClasses>
+        <name>Trippy</name>
+    </botMlDomain>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.ChatKey</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Text</dataType>
+        <developerName>ChatKey</developerName>
+        <label>Chat Key</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.ContactId</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>ContactId</developerName>
+        <label>Contact Id</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.LiveChatVisitorId</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>EndUserId</developerName>
+        <label>End User Id</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.Id</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>RoutableId</developerName>
+        <label>Routable Id</label>
+    </contextVariables>
+    <description>Trippy the travel bot</description>
+    <label>Trippy</label>
+</Bot>

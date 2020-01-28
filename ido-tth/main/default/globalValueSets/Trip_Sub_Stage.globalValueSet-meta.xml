@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>No Future Booking</fullName>
+        <default>true</default>
+        <label>No Future Booking</label>
+    </customValue>
+    <customValue>
+        <fullName>Has Future Booking</fullName>
+        <default>false</default>
+        <label>Has Future Booking</label>
+    </customValue>
+    <customValue>
+        <fullName>Smooth Travels</fullName>
+        <default>false</default>
+        <label>Smooth Travels</label>
+    </customValue>
+    <customValue>
+        <fullName>Experiencing Disruption</fullName>
+        <default>false</default>
+        <label>Experiencing Disruption</label>
+    </customValue>
+    <customValue>
+        <fullName>Positive Sentiment</fullName>
+        <default>false</default>
+        <label>Positive Sentiment</label>
+    </customValue>
+    <customValue>
+        <fullName>Negative Sentiment</fullName>
+        <default>false</default>
+        <label>Negative Sentiment</label>
+    </customValue>
+    <description>What sub stage is the traveler on within their trip. Is dependent picklist of the Trip Stage field</description>
+    <masterLabel>Trip Sub-Stage</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

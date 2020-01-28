@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Draft</fullName>
+        <default>true</default>
+        <label>Draft</label>
+    </customValue>
+    <customValue>
+        <fullName>Confirmed</fullName>
+        <default>false</default>
+        <label>Confirmed</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </customValue>
+    <customValue>
+        <fullName>Waitlist</fullName>
+        <default>false</default>
+        <label>Waitlist</label>
+    </customValue>
+    <customValue>
+        <fullName>Released</fullName>
+        <default>false</default>
+        <label>Released</label>
+    </customValue>
+    <customValue>
+        <fullName>No Room</fullName>
+        <default>false</default>
+        <label>No Room</label>
+    </customValue>
+    <customValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completed</label>
+    </customValue>
+    <description>What is the status of this booking/reservation?</description>
+    <masterLabel>Booking/Reservation Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

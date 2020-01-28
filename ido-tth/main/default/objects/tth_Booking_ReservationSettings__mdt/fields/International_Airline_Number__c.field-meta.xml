@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>International_Airline_Number__c</fullName>
+    <description>Used when generating the Ticket number on the Reservation object. See full list of airlines here: https://www2.arccorp.com/participatingcarriers/#/</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>International Airline Number</label>
+    <length>4</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

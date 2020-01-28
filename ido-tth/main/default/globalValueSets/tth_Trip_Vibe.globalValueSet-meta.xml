@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Off_the_beaten_track</fullName>
+        <default>false</default>
+        <label>Off the beaten track</label>
+    </customValue>
+    <customValue>
+        <fullName>Romantic</fullName>
+        <default>false</default>
+        <label>Romantic</label>
+    </customValue>
+    <customValue>
+        <fullName>Peace_and_quiet</fullName>
+        <default>false</default>
+        <label>Peace and quiet</label>
+    </customValue>
+    <customValue>
+        <fullName>Local_culture</fullName>
+        <default>false</default>
+        <label>Local culture</label>
+    </customValue>
+    <customValue>
+        <fullName>Family_friendly</fullName>
+        <default>false</default>
+        <label>Family friendly</label>
+    </customValue>
+    <customValue>
+        <fullName>Party_Nightlife</fullName>
+        <default>false</default>
+        <label>Party/Nightlife</label>
+    </customValue>
+    <masterLabel>Trip Vibe</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

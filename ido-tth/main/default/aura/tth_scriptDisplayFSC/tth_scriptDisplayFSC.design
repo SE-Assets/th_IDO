@@ -1,0 +1,4 @@
+<design:component label="TTH Script Text">
+	<design:attribute name="scriptText" label="Script Text"/>
+	<design:attribute name="componentIcon" label="Display Icon" default="utility:chat"/>
+</design:component>

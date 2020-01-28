@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layoutAssignments>
+        <layout>Contact-TTH Guest 360 Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-TTH Guest 360 Person Account Layout</layout>
+        <recordType>PersonAccount.PersonAccount</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tth_Booking__c-TTH Booking Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>tth_Trip__c-TTH Trip Layout</layout>
+    </layoutAssignments>
+</Profile>

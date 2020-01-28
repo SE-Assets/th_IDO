@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionContext>
+        <action>tth_GetNextTripDestination</action>
+        <argument>
+            <name>recordIDs</name>
+            <value>$Record.ID</value>
+        </argument>
+        <label>NextTripDestination</label>
+        <name>NextTripDestination</name>
+        <type>apex</type>
+    </actionContext>
+    <contextRecordType>Account</contextRecordType>
+    <description>Use NBA Flow Screen component to pull in Local Attraction recommendations</description>
+    <filter>
+        <childNode>Load_Local_Attraction_Recommendations</childNode>
+        <label>By Location</label>
+        <name>By_Location</name>
+        <expression>tth_Location__c = $NextTripDestination.output</expression>
+    </filter>
+    <label>Local Attraction Recommendations</label>
+    <recommendationLoad>
+        <label>Load Local Attraction Recommendations</label>
+        <name>Load_Local_Attraction_Recommendations</name>
+        <condition>
+            <field>Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Activities</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+    </recommendationLoad>
+    <union>
+        <childNode>By_Location</childNode>
+        <label>Output</label>
+        <name>Output_59178c624c5441d5bbc260dc1a0e1424</name>
+    </union>
+</RecommendationStrategy>

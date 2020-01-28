@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Trip_Sub_Stage__c</fullName>
+    <description>Defines the sub stage of the travelers journey</description>
+    <externalId>false</externalId>
+    <label>Trip Sub-Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>tth_Trip_Stage__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Trip_Sub_Stage</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>PreTrip</controllingFieldValue>
+            <valueName>No Future Booking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PreTrip</controllingFieldValue>
+            <valueName>Has Future Booking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OnTrip</controllingFieldValue>
+            <valueName>Smooth Travels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OnTrip</controllingFieldValue>
+            <valueName>Experiencing Disruption</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PostTrip</controllingFieldValue>
+            <valueName>Positive Sentiment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PostTrip</controllingFieldValue>
+            <valueName>Negative Sentiment</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

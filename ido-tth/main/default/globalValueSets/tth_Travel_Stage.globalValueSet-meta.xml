@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PreTrip</fullName>
+        <default>true</default>
+        <label>PreTrip</label>
+    </customValue>
+    <customValue>
+        <fullName>OnTrip</fullName>
+        <default>false</default>
+        <label>OnTrip</label>
+    </customValue>
+    <customValue>
+        <fullName>PostTrip</fullName>
+        <default>false</default>
+        <label>PostTrip</label>
+    </customValue>
+    <description>What part of the guest journey is the demo currently within</description>
+    <masterLabel>Travel Stage</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

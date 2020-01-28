@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Related_Booking__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Which booking is this suggestion for?</description>
+    <externalId>false</externalId>
+    <label>Related Booking</label>
+    <referenceTo>tth_Booking__c</referenceTo>
+    <relationshipLabel>Suggested Bookings</relationshipLabel>
+    <relationshipName>Suggested_Bookings</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

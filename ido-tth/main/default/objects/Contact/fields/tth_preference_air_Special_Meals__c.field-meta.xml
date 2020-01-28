@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_preference_air_Special_Meals__c</fullName>
+    <description>Airline preferences - Special Meal request options</description>
+    <externalId>false</externalId>
+    <label>Special Meals</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Regular Meal</fullName>
+                <default>true</default>
+                <label>Regular Meal</label>
+            </value>
+            <value>
+                <fullName>Bland / Low Residue</fullName>
+                <default>false</default>
+                <label>Bland / Low Residue</label>
+            </value>
+            <value>
+                <fullName>Child Meal</fullName>
+                <default>false</default>
+                <label>Child Meal</label>
+            </value>
+            <value>
+                <fullName>Diabetic Meal</fullName>
+                <default>false</default>
+                <label>Diabetic Meal</label>
+            </value>
+            <value>
+                <fullName>Fruit Platter</fullName>
+                <default>false</default>
+                <label>Fruit Platter</label>
+            </value>
+            <value>
+                <fullName>Gluten Free Meal</fullName>
+                <default>false</default>
+                <label>Gluten Free Meal</label>
+            </value>
+            <value>
+                <fullName>Hindu Meal</fullName>
+                <default>false</default>
+                <label>Hindu Meal</label>
+            </value>
+            <value>
+                <fullName>Infant / Baby Meal</fullName>
+                <default>false</default>
+                <label>Infant / Baby Meal</label>
+            </value>
+            <value>
+                <fullName>Kosher Meal</fullName>
+                <default>false</default>
+                <label>Kosher Meal</label>
+            </value>
+            <value>
+                <fullName>Low Calorie Meal</fullName>
+                <default>false</default>
+                <label>Low Calorie Meal</label>
+            </value>
+            <value>
+                <fullName>Low Salt / Sodium Meal</fullName>
+                <default>false</default>
+                <label>Low Salt / Sodium Meal</label>
+            </value>
+            <value>
+                <fullName>Muslim Meal</fullName>
+                <default>false</default>
+                <label>Muslim Meal</label>
+            </value>
+            <value>
+                <fullName>No Salt Meal</fullName>
+                <default>false</default>
+                <label>No Salt Meal</label>
+            </value>
+            <value>
+                <fullName>Non Lactose Meal</fullName>
+                <default>false</default>
+                <label>Non Lactose Meal</label>
+            </value>
+            <value>
+                <fullName>Peanut-Free Meal</fullName>
+                <default>false</default>
+                <label>Peanut-Free Meal</label>
+            </value>
+            <value>
+                <fullName>Seafood Meal</fullName>
+                <default>false</default>
+                <label>Seafood Meal</label>
+            </value>
+            <value>
+                <fullName>Veg Lacto-Ovo</fullName>
+                <default>false</default>
+                <label>Veg Lacto-Ovo</label>
+            </value>
+            <value>
+                <fullName>Vegetarian</fullName>
+                <default>false</default>
+                <label>Vegetarian</label>
+            </value>
+            <value>
+                <fullName>Vegetarian Kosher</fullName>
+                <default>false</default>
+                <label>Vegetarian Kosher</label>
+            </value>
+            <value>
+                <fullName>Vegetarian, Raw</fullName>
+                <default>false</default>
+                <label>Vegetarian, Raw</label>
+            </value>
+            <value>
+                <fullName>Vegetarian Hindu Meal</fullName>
+                <default>false</default>
+                <label>Vegetarian Hindu Meal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

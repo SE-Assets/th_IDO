@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Amenities_Icon__c</fullName>
+    <description>Icon representation of the Amenities multi select picklist</description>
+    <externalId>false</externalId>
+    <formula>IF( INCLUDES( tth_Amenities_pl__c , &#39;High Floor&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/highfloor.png&#39;, &#39;Views&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Views&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/views.png&#39;, &#39;Views&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Club Access&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/clubaccess.png&#39;, &#39;Club Access&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Gym&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/gym.png&#39;, &#39;Gym&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Pool&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/pool.png&#39;, &#39;Pool&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Mini bar&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/minibar.png&#39;, &#39;Mini bar&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Aisle Seat&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/aisleseat.png&#39;, &#39;Aisle Seat&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Window Seat&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/windowseat.png&#39;, &#39;Window Seat&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Powered Seat&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/poweredseat.png&#39;, &#39;Powered Seat&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Exit Row&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/exitrow.png&#39;, &#39;Exit Row&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Meals&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/meals.png&#39;, &#39;Meals&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Wifi&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/wifi.png&#39;, &#39;Wifi&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Unlimited Mileage&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/unlimitedmileage.png&#39;, &#39;Unlimited Mileage&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Fuel Option&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/fueloption.png&#39;, &#39;Fuel Option&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;In Terminal Pick up&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/interminalpickup.png&#39;, &#39;In Terminal Pick Up&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Air Conditioning&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/airconditioning.png&#39;, &#39;Air Conditioning&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;USB&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/usb.png&#39;, &#39;USB&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Bluetooth&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/bluetooth.png&#39;, &#39;BlueTooth&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Cruise Control&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/cruisecontrol.png&#39;, &#39;Cruise Control&#39; , 50, 50) ,&#39;&#39;) &amp;
+IF( INCLUDES( tth_Amenities_pl__c , &#39;Reversing Camera&#39;) ,  IMAGE(&#39;/resource/tth_amenity_icons/reversingcamera.png&#39;, &#39;Reversing Camera&#39; , 50, 50) ,&#39;&#39;)</formula>
+    <inlineHelpText>What are the features or what is included with the booking</inlineHelpText>
+    <label>Amenities</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

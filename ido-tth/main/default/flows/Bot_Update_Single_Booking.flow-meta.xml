@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Set_Booking_Status</name>
+        <label>Set Booking Status</label>
+        <locationX>164</locationX>
+        <locationY>50</locationY>
+        <assignmentItems>
+            <assignToReference>varBooking.tth_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varStatus</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Booking</targetReference>
+        </connector>
+    </assignments>
+    <interviewLabel>Bot - Update Single Booking {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Bot - Update Single Booking</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Booking</name>
+        <label>Update Booking</label>
+        <locationX>324</locationX>
+        <locationY>50</locationY>
+        <inputReference>varBooking</inputReference>
+    </recordUpdates>
+    <startElementReference>Set_Booking_Status</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>varBooking</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>tth_Booking__c</objectType>
+    </variables>
+    <variables>
+        <name>varStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Canceled</stringValue>
+        </value>
+    </variables>
+</Flow>

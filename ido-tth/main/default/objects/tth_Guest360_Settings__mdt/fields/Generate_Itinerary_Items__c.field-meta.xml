@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Itinerary_Items__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If checked, system will auto generate Custom Activities related to the Trip object when a Booking (which is related to a Trip object) is created.  Icon is based on the Booking Type</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Generate Itinerary Items</label>
+    <type>Checkbox</type>
+</CustomField>

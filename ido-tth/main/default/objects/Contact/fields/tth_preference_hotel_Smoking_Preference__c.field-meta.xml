@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_preference_hotel_Smoking_Preference__c</fullName>
+    <description>Hotel preferences - smoking or non-smoking room</description>
+    <externalId>false</externalId>
+    <label>Smoking Preference</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>tth_Smoking_Preferences</valueSetName>
+    </valueSet>
+</CustomField>

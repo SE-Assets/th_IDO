@@ -1,0 +1,89 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+	 <aura:attribute name="iconName" type="String"></aura:attribute>
+	 <aura:attribute name="iconColor" type="String"></aura:attribute>
+	 <aura:attribute name="image1" type="String"></aura:attribute>
+    <aura:attribute name="image2" type="String"></aura:attribute>
+    <aura:attribute name="image3" type="String"></aura:attribute>
+    <aura:attribute name="image4" type="String"></aura:attribute>
+    <aura:attribute name="purchase1" type="String"></aura:attribute>
+    <aura:attribute name="purchase2" type="String"></aura:attribute>
+    <aura:attribute name="purchase3" type="String"></aura:attribute>
+    <aura:attribute name="purchase4" type="String"></aura:attribute>
+    <aura:attribute name="price1" type="String"></aura:attribute>
+    <aura:attribute name="price2" type="String"></aura:attribute>
+    <aura:attribute name="price3" type="String"></aura:attribute>
+    <aura:attribute name="price4" type="String"></aura:attribute>
+    <aura:attribute name="count1" type="String"></aura:attribute>
+    <aura:attribute name="count2" type="String"></aura:attribute>
+    <aura:attribute name="count3" type="String"></aura:attribute>
+    <aura:attribute name="count4" type="String"></aura:attribute>
+
+
+    <lightning:card>
+    	<aura:set attribute="title">
+        	<lightning:icon iconName="{!v.iconName}" size="medium" class="card-icon" style="{! 'background-color:' + v.iconColor + ';' }"></lightning:icon>
+            <span class="slds-m-left_small" style="font-weight:700">Recent Purchases</span>
+        </aura:set>
+        <aura:set attribute="footer">
+
+            	<lightning:button label="View All" variant="bare"></lightning:button>
+
+
+        </aura:set>
+
+
+    <lightning:layout horizontalAlign="" verticalAlign="" class="slds-m-top_medium ">
+    	<aura:if isTrue="{!v.purchase1}">
+        <lightning:layoutItem flexibility="" padding="horizontal-small" size="3">
+        	<div class="purchase-box">
+            	<div class="purchase-image" style="{! 'background-image:url(' + (v.image1) + ');'}"></div>
+                <div class="slds-p-around_small purchase-title-container">
+                    <div class="purchase-title">{!v.purchase1}</div>
+                    <span class="slds-text-color_weak ">{!v.price1}</span>
+                </div>
+            </div>
+        </lightning:layoutItem>
+        </aura:if>
+
+        <aura:if isTrue="{!v.purchase2}">
+        <lightning:layoutItem flexibility="" padding="horizontal-small" size="3">
+        	<div class="purchase-box">
+            	<div class="purchase-image" style="{! 'background-image:url(' + (v.image2) + ');'}"></div>
+                <div class="slds-p-around_small purchase-title-container">
+                    <div class="purchase-title">{!v.purchase2}</div>
+                    <span class="slds-text-color_weak ">{!v.price2}</span>
+                </div>
+            </div>
+        </lightning:layoutItem>
+        </aura:if>
+
+        <aura:if isTrue="{!v.purchase3}">
+        <lightning:layoutItem flexibility="" padding="horizontal-small" size="3">
+        	<div class="purchase-box">
+            	<div class="purchase-image" style="{! 'background-image:url(' + (v.image3) + ');'}"></div>
+                <div class="slds-p-around_small purchase-title-container">
+                    <div class="purchase-title">{!v.purchase3}</div>
+                    <span class="slds-text-color_weak ">{!v.price3}</span>
+                </div>
+            </div>
+        </lightning:layoutItem>
+        </aura:if>
+
+        <aura:if isTrue="{!v.purchase4}">
+        <lightning:layoutItem flexibility="" padding="horizontal-small" size="3">
+        	<div class="purchase-box">
+            	<div class="purchase-image" style="{! 'background-image:url(' + (v.image4) + ');'}"></div>
+                <div class="slds-p-around_small purchase-title-container">
+                    <div class="purchase-title">{!v.purchase4}</div>
+                    <span class="slds-text-color_weak ">{!v.price4}</span>
+                </div>
+            </div>
+        </lightning:layoutItem>
+        </aura:if>
+
+
+
+    </lightning:layout>
+  </lightning:card>
+</aura:component>

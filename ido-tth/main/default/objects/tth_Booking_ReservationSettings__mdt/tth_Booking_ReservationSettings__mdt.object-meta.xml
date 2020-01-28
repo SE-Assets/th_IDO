@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Various settings for the TTH Booking/Reservation functionality.  Includes settings for the following custom objects: Trip, Booking, Reservation</description>
+    <label>tth_Booking/ReservationSettings</label>
+    <pluralLabel>tth_Booking/ReservationSettings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Party_Member__c</fullName>
+    <description>The traveler who is part of the party</description>
+    <externalId>false</externalId>
+    <label>Party Member</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Travel Parties</relationshipLabel>
+    <relationshipName>Parties</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

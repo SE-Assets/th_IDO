@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Loyalty_Point_Balance__c</fullName>
+    <description>What the traveler&#39;s current point balance is - Base Points + Sum of Loyalty Event Points.  Will accurately reflect if the traveler has use point redemption and not just point accrual</description>
+    <externalId>false</externalId>
+    <formula>IF(tth_Base_Loyalty_Points__c +  tth_Sum_All_Loyalty_Event_Points__c &gt;= 0, tth_Base_Loyalty_Points__c +  tth_Sum_All_Loyalty_Event_Points__c, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The current loyalty points balance, includes all earned and spent points</inlineHelpText>
+    <label>Loyalty Point Balance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

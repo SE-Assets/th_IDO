@@ -1,0 +1,88 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+	<aura:attribute name="image1" type="String"></aura:attribute>
+    <aura:attribute name="image2" type="String"></aura:attribute>
+    <aura:attribute name="image3" type="String"></aura:attribute>
+    <aura:attribute name="image4" type="String"></aura:attribute>
+    <aura:attribute name="interest1" type="String"></aura:attribute>
+    <aura:attribute name="interest2" type="String"></aura:attribute>
+    <aura:attribute name="interest3" type="String"></aura:attribute>
+    <aura:attribute name="interest4" type="String"></aura:attribute>
+    <aura:attribute name="strength1" type="String"></aura:attribute>
+    <aura:attribute name="strength2" type="String"></aura:attribute>
+    <aura:attribute name="strength3" type="String"></aura:attribute>
+    <aura:attribute name="strength4" type="String"></aura:attribute>
+    <aura:attribute name="count1" type="String"></aura:attribute>
+    <aura:attribute name="count2" type="String"></aura:attribute>
+    <aura:attribute name="count3" type="String"></aura:attribute>
+    <aura:attribute name="count4" type="String"></aura:attribute>
+		<aura:attribute name="iconName" type="String"></aura:attribute>
+		<aura:attribute name="iconColor" type="String"></aura:attribute>
+		<aura:attribute name="showPurchaseCount1" type="Boolean"></aura:attribute>
+		<aura:attribute name="showPurchaseCount2" type="Boolean"></aura:attribute>
+		<aura:attribute name="showPurchaseCount3" type="Boolean"></aura:attribute>
+		<aura:attribute name="showPurchaseCount4" type="Boolean"></aura:attribute>
+
+
+    <lightning:card>
+    	<aura:set attribute="title">
+        	<lightning:icon iconName="{!v.iconName}" size="medium" class="card-icon" style="{! 'background-color:' + v.iconColor + ';' }"></lightning:icon>
+            <span class="slds-m-left_small" style="font-weight:700">Top Interests</span>
+        </aura:set>
+
+    </lightning:card>
+    <lightning:layout horizontalAlign="center" verticalAlign="" class="slds-m-top_medium ">
+    	<lightning:layoutItem flexibility="" padding="horizontal-small" size="3">
+        	<div class="interest-box">
+            	<div class="interest-image" style="{! 'background-image:url(' + (v.image1) + ');'}"></div>
+                <div class="slds-p-around_small interest-title-container">
+                    <div class="interest-title">{!v.interest1}</div>
+                    <lightning:dynamicIcon type="strength" option="{!v.strength1}" alternativeText="Strength"/>
+										<aura:if isTrue="{!v.showPurchaseCount1}">
+                    <span class="interest-title slds-text-color_weak slds-m-left_x-small">{!v.count1}</span>
+                    <span class=" slds-text-color_weak slds-m-left_xx-small">Purchases</span>
+										</aura:if>
+                </div>
+            </div>
+        </lightning:layoutItem>
+        <lightning:layoutItem flexibility="auto" padding="horizontal-small" size="3">
+        	<div class="interest-box">
+            	<div class="interest-image" style="{! 'background-image:url(' + (v.image2) + ');'}"></div>
+                <div class=" slds-p-around_small interest-title-container">
+                    <div class="interest-title">{!v.interest2}</div>
+                    <lightning:dynamicIcon type="strength" option="{!v.strength2}" alternativeText="Strength"/>
+										<aura:if isTrue="{!v.showPurchaseCount2}">
+                    <span class="interest-title slds-text-color_weak slds-m-left_x-small">{!v.count2}</span>
+                    <span class=" slds-text-color_weak slds-m-left_xx-small">Purchases</span>
+										</aura:if>
+                </div>
+            </div>
+        </lightning:layoutItem>
+        <lightning:layoutItem flexibility="auto" padding="horizontal-small" size="3">
+        	<div class="interest-box">
+            	<div class="interest-image" style="{! 'background-image:url(' + (v.image3) + ');'}"></div>
+                <div class=" slds-p-around_small interest-title-container">
+                    <div class="interest-title">{!v.interest3}</div>
+                    <lightning:dynamicIcon type="strength" option="{!v.strength3}" alternativeText="Strength"/>
+										<aura:if isTrue="{!v.showPurchaseCount3}">
+										<span class="interest-title slds-text-color_weak slds-m-left_x-small">{!v.count3}</span>
+                    <span class=" slds-text-color_weak slds-m-left_xx-small">Purchases</span>
+										</aura:if>
+                </div>
+            </div>
+        </lightning:layoutItem>
+        <lightning:layoutItem flexibility="auto" padding="horizontal-small" size="3">
+        	<div class="interest-box">
+            	<div class="interest-image" style="{! 'background-image:url(' + (v.image4) + ');'}"></div>
+                <div class=" slds-p-around_small interest-title-container">
+                    <div class="interest-title">{!v.interest4}</div>
+                    <lightning:dynamicIcon type="strength" option="{!v.strength4}" alternativeText="Strength"/>
+										<aura:if isTrue="{!v.showPurchaseCount4}">
+                    <span class="interest-title slds-text-color_weak slds-m-left_x-small">{!v.count4}</span>
+                    <span class=" slds-text-color_weak slds-m-left_xx-small">Purchases</span>
+										</aura:if>
+                </div>
+            </div>
+        </lightning:layoutItem>
+
+    </lightning:layout>
+</aura:component>

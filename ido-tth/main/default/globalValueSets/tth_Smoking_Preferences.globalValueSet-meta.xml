@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Non-Smoking</fullName>
+        <default>true</default>
+        <label>Non-Smoking</label>
+    </customValue>
+    <customValue>
+        <fullName>Smoking</fullName>
+        <default>false</default>
+        <label>Smoking</label>
+    </customValue>
+    <customValue>
+        <fullName>Don&#39;t Care</fullName>
+        <default>false</default>
+        <label>Don&#39;t Care</label>
+    </customValue>
+    <masterLabel>Smoking Preferences</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

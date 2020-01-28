@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BookingTriggersDisabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Should be used by APEX Triggers to check whether they should execute</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>BookingTriggersDisabled</label>
+    <type>Checkbox</type>
+</CustomField>

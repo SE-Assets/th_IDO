@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Next_Loyalty_Level_Threshold__c</fullName>
+    <defaultValue>20000</defaultValue>
+    <description>Is a threshold level and will indicate when how many Loyalty Event points are required to advance to the next tier. Is used by the &quot;Points to Next Level&quot; formula field</description>
+    <externalId>false</externalId>
+    <label>Next Loyalty Level Threshold</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

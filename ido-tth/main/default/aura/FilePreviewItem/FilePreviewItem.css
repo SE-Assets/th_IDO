@@ -1,0 +1,13 @@
+.THIS .slds-image__crop img {
+    max-width: 100%;
+}
+
+.THIS {
+    min-width: 140px;
+    min-height: 140px;
+    padding: 0.5rem;
+}
+
+.THIS .slds-image__text{
+    z-index: 1;
+}

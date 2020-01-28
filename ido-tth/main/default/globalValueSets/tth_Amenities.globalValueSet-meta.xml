@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>High Floor</fullName>
+        <default>false</default>
+        <label>High Floor</label>
+    </customValue>
+    <customValue>
+        <fullName>Views</fullName>
+        <default>false</default>
+        <label>Views</label>
+    </customValue>
+    <customValue>
+        <fullName>Club Access</fullName>
+        <default>false</default>
+        <label>Club Access</label>
+    </customValue>
+    <customValue>
+        <fullName>Gym</fullName>
+        <default>false</default>
+        <label>Gym</label>
+    </customValue>
+    <customValue>
+        <fullName>Pool</fullName>
+        <default>false</default>
+        <label>Pool</label>
+    </customValue>
+    <customValue>
+        <fullName>Mini bar</fullName>
+        <default>false</default>
+        <label>Mini bar</label>
+    </customValue>
+    <customValue>
+        <fullName>Aisle Seat</fullName>
+        <default>false</default>
+        <label>Aisle Seat</label>
+    </customValue>
+    <customValue>
+        <fullName>Middle Seat</fullName>
+        <default>false</default>
+        <label>Middle Seat</label>
+    </customValue>
+    <customValue>
+        <fullName>Window Seat</fullName>
+        <default>false</default>
+        <label>Window Seat</label>
+    </customValue>
+    <customValue>
+        <fullName>Powered Seat</fullName>
+        <default>false</default>
+        <label>Powered Seat</label>
+    </customValue>
+    <customValue>
+        <fullName>Bulkhead Seat</fullName>
+        <default>false</default>
+        <label>Bulkhead Seat</label>
+    </customValue>
+    <customValue>
+        <fullName>Exit Row</fullName>
+        <default>false</default>
+        <label>Exit Row</label>
+    </customValue>
+    <customValue>
+        <fullName>First Class</fullName>
+        <default>false</default>
+        <label>First Class</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Class</fullName>
+        <default>false</default>
+        <label>Business Class</label>
+    </customValue>
+    <customValue>
+        <fullName>Premium Economy</fullName>
+        <default>false</default>
+        <label>Premium Economy</label>
+    </customValue>
+    <customValue>
+        <fullName>Regular Economy</fullName>
+        <default>false</default>
+        <label>Regular Economy</label>
+    </customValue>
+    <customValue>
+        <fullName>Discount Economy</fullName>
+        <default>false</default>
+        <label>Discount Economy</label>
+    </customValue>
+    <customValue>
+        <fullName>Meals</fullName>
+        <default>false</default>
+        <label>Meals</label>
+    </customValue>
+    <customValue>
+        <fullName>Wifi</fullName>
+        <default>false</default>
+        <label>Wifi</label>
+    </customValue>
+    <customValue>
+        <fullName>Unlimited Mileage</fullName>
+        <default>false</default>
+        <label>Unlimited Mileage</label>
+    </customValue>
+    <customValue>
+        <fullName>Fuel Option</fullName>
+        <default>false</default>
+        <label>Fuel Option</label>
+    </customValue>
+    <customValue>
+        <fullName>In Terminal Pick up</fullName>
+        <default>false</default>
+        <label>In Terminal Pick up</label>
+    </customValue>
+    <customValue>
+        <fullName>Air Conditioning</fullName>
+        <default>false</default>
+        <label>Air Conditioning</label>
+    </customValue>
+    <customValue>
+        <fullName>USB Connector</fullName>
+        <default>false</default>
+        <label>USB Connector</label>
+    </customValue>
+    <customValue>
+        <fullName>Bluetooth</fullName>
+        <default>false</default>
+        <label>Bluetooth</label>
+    </customValue>
+    <customValue>
+        <fullName>Cruise Control</fullName>
+        <default>false</default>
+        <label>Cruise Control</label>
+    </customValue>
+    <customValue>
+        <fullName>Reversing Camera</fullName>
+        <default>false</default>
+        <label>Reversing Camera</label>
+    </customValue>
+    <description>What are the different amenities of the room, car, plane, tour, etc</description>
+    <masterLabel>Amenities</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

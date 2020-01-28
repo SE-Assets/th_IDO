@@ -1,0 +1,66 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global"
+                controller="FilePreviewController">
+    <aura:attribute name="documentIds" type="string[]"></aura:attribute>
+    <aura:attribute name="documents" type="ContentDocument[]"></aura:attribute>
+    <aura:attribute name="showDocuments" type="ContentDocument[]"></aura:attribute>
+    <aura:attribute name="lastDocument" type="ContentDocument"></aura:attribute>
+    <aura:attribute name="remainingNumber" type="Integer"></aura:attribute>
+    <aura:attribute name="numberOfVisibleItems" type="Integer" default="8"></aura:attribute>
+    <aura:attribute name="cardTitle" type="String" default="Files"></aura:attribute>
+    <aura:attribute name="iconName" type="String" default="standard:file"></aura:attribute>
+
+    <aura:handler event="forceChatter:postCreated" action="{!c.newPostCreated}"/>
+
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div>
+        <lightning:card >
+            <aura:set attribute="title">
+                <lightning:icon iconName="{!v.iconName}"
+                                size="small" /> {!v.cardTitle} ({!v.documents.length})
+            </aura:set>
+            <aura:set attribute="footer">
+                <a onclick="{!c.goToFileList}">View All</a>
+            </aura:set>
+            <aura:set attribute="actions">
+                <lightning:button label="Upload File" onclick="{!c.showModal}"/>
+            </aura:set>
+            <p class="slds-p-horizontal--medium">
+				<div class="slds-grid slds-wrap">
+                    <aura:iteration items="{!v.showDocuments}" var="document">
+                            <c:FilePreviewItem document="{!document}" documentIds="{!v.documentIds}"></c:FilePreviewItem>
+                    </aura:iteration>
+                    <aura:if isTrue="{!v.lastDocument != null}">
+                        <c:FilePreviewItem document="{!v.lastDocument}" documentIds="{!v.documentIds}"
+                                               isOverflow="true" overflowNumber="{!v.remainingNumber}"></c:FilePreviewItem>
+
+                    </aura:if>
+                </div>
+            </p>
+        </lightning:card>
+    </div>
+
+    <div role="dialog" tabindex="-1" class="slds-modal"
+         aura:id="dialog">
+        <div class="slds-modal__container">
+            <div class="slds-modal__header">
+                <button class="slds-button slds-modal__close slds-button--icon-inverse"
+                        onclick="{!c.hideModal}">
+                    <lightning:icon iconName="utility:close" size="medium"/>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 class="slds-text-heading--medium">Upload File</h2>
+            </div>
+            <div class="slds-modal__content slds-p-around--medium">
+                <forceChatter:publisher context="RECORD" recordId="{!v.recordId}"></forceChatter:publisher>
+            </div>
+            <div class="slds-modal__footer">
+                <button class="slds-button slds-button--neutral "
+                        onclick="{!c.hideModal}">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="slds-backdrop"
+         aura:id="backdrop"></div>
+    <lightning:spinner aura:id="mySpinner" class="slds-hide"/>
+</aura:component>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What are the features or what is included with the booking --></help>
+    <label><!-- Amenities --></label>
+    <name>tth_Amenities_Icon__c</name>
+</CustomFieldTranslation>

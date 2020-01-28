@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>tth_Booking__c</contextRecordType>
+    <label>Booking Record</label>
+    <union>
+        <label>Output</label>
+        <name>Output_f4a4f6b7c7f64a60a9bbdfea37c1a786</name>
+    </union>
+</RecommendationStrategy>

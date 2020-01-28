@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Trip_Compact</fullName>
+    <fields>tth_Trip_Name__c</fields>
+    <fields>tth_Type_Icon__c</fields>
+    <fields>tth_Trip_Origin__c</fields>
+    <fields>tth_Trip_Start__c</fields>
+    <fields>tth_Trip_Destination__c</fields>
+    <fields>tth_Trip_End__c</fields>
+    <fields>tth_Summary__c</fields>
+    <label>tth_Trip_Compact</label>
+</CompactLayout>

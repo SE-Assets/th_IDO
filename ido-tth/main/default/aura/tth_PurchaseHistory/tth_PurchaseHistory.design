@@ -1,0 +1,31 @@
+<design:component label="TTH Purchase History">
+
+<design:attribute name="iconName"
+                  label="Icon Name"
+                  default="custom:custom93"
+                  description="Lightning Design Icon name"/>
+
+<design:attribute name="iconColor"
+                  label="Icon Color"
+                  default="#904D4C"
+                  description="HEX code for the icon color"/>
+
+
+    <design:attribute name="purchase1" label="Purchase 1 Title"></design:attribute>
+    <design:attribute name="image1" label="Purchase 1 Image"></design:attribute>
+    <design:attribute name="price1" label="Purchase 1 price"></design:attribute>
+    <design:attribute name="count1" label="Purchase 1 Purchase Count"></design:attribute>
+    <design:attribute name="purchase2" label="Purchase 2 Title"></design:attribute>
+    <design:attribute name="image2" label="Purchase 2 Image"></design:attribute>
+    <design:attribute name="price2" label="Purchase 2 price"></design:attribute>
+    <design:attribute name="count2" label="Purchase 2 Purchase Count"></design:attribute>
+    <design:attribute name="purchase3" label="Purchase 3 Title"></design:attribute>
+    <design:attribute name="image3" label="Purchase 3 Image"></design:attribute>
+    <design:attribute name="price3" label="Purchase 3 price"></design:attribute>
+    <design:attribute name="count3" label="Purchase 3 Purchase Count"></design:attribute>
+    <design:attribute name="purchase4" label="Purchase 4 Title"></design:attribute>
+    <design:attribute name="image4" label="Purchase 4 Image"></design:attribute>
+    <design:attribute name="price4" label="Purchase 4 price"></design:attribute>
+    <design:attribute name="count4" label="Purchase 4 Purchase Count"></design:attribute>
+
+</design:component>

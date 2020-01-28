@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Experiencing_Trip_Disruption__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Demo trigger field to indicate that the traveler is experiencing some sort of disruption. May be used to influence Chatbot context, NBA offers, Component Visibility, etc</description>
+    <externalId>false</externalId>
+    <label>Experiencing Trip Disruption</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

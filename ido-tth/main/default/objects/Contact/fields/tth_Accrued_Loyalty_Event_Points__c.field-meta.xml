@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Accrued_Loyalty_Event_Points__c</fullName>
+    <description>The sum of all positive Standard and Bonus Points - Is part of the Lifetime Points Value</description>
+    <externalId>false</externalId>
+    <label>Accrued Loyalty Event Points</label>
+    <summarizedField>tth_Loyalty_Event__c.tth_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>tth_Loyalty_Event__c.tth_Type__c</field>
+        <operation>equals</operation>
+        <value>Standard Points, Bonus Points</value>
+    </summaryFilterItems>
+    <summaryForeignKey>tth_Loyalty_Event__c.tth_Traveler__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <type>Summary</type>
+</CustomField>

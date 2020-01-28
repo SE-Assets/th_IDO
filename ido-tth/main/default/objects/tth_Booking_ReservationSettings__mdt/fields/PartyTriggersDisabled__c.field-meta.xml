@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PartyTriggersDisabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Should be used by all code for triggers on the Party object. Enables the ability to disable all via a setting.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>PartyTriggersDisabled</label>
+    <type>Checkbox</type>
+</CustomField>

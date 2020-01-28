@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Economy</fullName>
+        <default>true</default>
+        <label>Economy</label>
+    </customValue>
+    <customValue>
+        <fullName>Premium Economy</fullName>
+        <default>false</default>
+        <label>Premium Economy</label>
+    </customValue>
+    <customValue>
+        <fullName>Business</fullName>
+        <default>false</default>
+        <label>Business</label>
+    </customValue>
+    <customValue>
+        <fullName>First</fullName>
+        <default>false</default>
+        <label>First</label>
+    </customValue>
+    <masterLabel>Airline Travel Class</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

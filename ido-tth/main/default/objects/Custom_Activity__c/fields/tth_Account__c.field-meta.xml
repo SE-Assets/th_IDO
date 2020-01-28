@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This isn&#39;t really a field that is actually used, rather it is to provide a bit of a work around when using PersonAccounts in combo with SFDX data import. There&#39;s a few workflows hooked into this field to populate the Contact/Traveler relationships</description>
+    <externalId>false</externalId>
+    <label>tth_Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>DO NOT USE Custom Activities</relationshipLabel>
+    <relationshipName>tth_Custom_Activities</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

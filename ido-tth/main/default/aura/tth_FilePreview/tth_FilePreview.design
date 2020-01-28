@@ -1,0 +1,5 @@
+<design:component label="TTH Record File Gallery">
+	<design:attribute name="numberOfVisibleItems" label="Number of Visible Files" default="8"></design:attribute>
+	<design:attribute name="cardTitle" label="Card Title" default="Files"></design:attribute>
+	<design:attribute name="iconName" label="Icon Name" default="standard:file"></design:attribute>
+</design:component>

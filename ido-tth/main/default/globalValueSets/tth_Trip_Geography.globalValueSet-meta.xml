@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Tropical</fullName>
+        <default>false</default>
+        <label>Tropical</label>
+    </customValue>
+    <customValue>
+        <fullName>Urban</fullName>
+        <default>false</default>
+        <label>Urban</label>
+    </customValue>
+    <customValue>
+        <fullName>Forest_Jungle</fullName>
+        <default>false</default>
+        <label>Forest/Jungle</label>
+    </customValue>
+    <masterLabel>Trip Geography</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

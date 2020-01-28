@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Landmarks</fullName>
+        <default>false</default>
+        <label>Landmarks</label>
+    </customValue>
+    <customValue>
+        <fullName>Arts</fullName>
+        <default>false</default>
+        <label>Arts</label>
+    </customValue>
+    <customValue>
+        <fullName>Nightlife</fullName>
+        <default>false</default>
+        <label>Nightlife</label>
+    </customValue>
+    <customValue>
+        <fullName>Adventure</fullName>
+        <default>false</default>
+        <label>Adventure</label>
+    </customValue>
+    <masterLabel>Trip Activities</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

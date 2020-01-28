@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Standard Points</fullName>
+        <default>true</default>
+        <label>Standard Points</label>
+    </customValue>
+    <customValue>
+        <fullName>Status Points</fullName>
+        <default>false</default>
+        <label>Status Points</label>
+    </customValue>
+    <customValue>
+        <fullName>Bonus Points</fullName>
+        <default>false</default>
+        <label>Bonus Points</label>
+    </customValue>
+    <customValue>
+        <fullName>Points Redemption</fullName>
+        <default>false</default>
+        <label>Points Redemption</label>
+    </customValue>
+    <description>QiDO for TTH - What kind of loyalty event is this?</description>
+    <masterLabel>Loyalty Event Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

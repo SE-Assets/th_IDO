@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Hot</fullName>
+        <default>false</default>
+        <label>Hot</label>
+    </customValue>
+    <customValue>
+        <fullName>Warm</fullName>
+        <default>false</default>
+        <label>Warm</label>
+    </customValue>
+    <customValue>
+        <fullName>Mild</fullName>
+        <default>false</default>
+        <label>Mild</label>
+    </customValue>
+    <customValue>
+        <fullName>Crisp</fullName>
+        <default>false</default>
+        <label>Crisp</label>
+    </customValue>
+    <customValue>
+        <fullName>Frozen</fullName>
+        <default>false</default>
+        <label>Frozen</label>
+    </customValue>
+    <masterLabel>Trip Weather</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

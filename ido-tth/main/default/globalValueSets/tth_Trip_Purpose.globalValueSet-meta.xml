@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Personal</fullName>
+        <default>true</default>
+        <label>Personal</label>
+    </customValue>
+    <customValue>
+        <fullName>Business</fullName>
+        <default>false</default>
+        <label>Business</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixed</fullName>
+        <default>false</default>
+        <label>Mixed</label>
+    </customValue>
+    <description>What is the reason for travel?</description>
+    <masterLabel>Trip Purpose</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

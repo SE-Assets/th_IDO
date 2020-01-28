@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Add_ons__c</fullName>
+    <description>Addition purchased services, extras in combination with and attributed to a booking</description>
+    <externalId>false</externalId>
+    <label>Add-ons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>tth_Booking_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>tth_Add_ons</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Accomodation</controllingFieldValue>
+            <controllingFieldValue>Flight</controllingFieldValue>
+            <controllingFieldValue>Hotel</controllingFieldValue>
+            <valueName>Transfer to/from Airport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accomodation</controllingFieldValue>
+            <controllingFieldValue>Flight</controllingFieldValue>
+            <controllingFieldValue>Hotel</controllingFieldValue>
+            <controllingFieldValue>Rail</controllingFieldValue>
+            <controllingFieldValue>Bus</controllingFieldValue>
+            <controllingFieldValue>Ferry</controllingFieldValue>
+            <controllingFieldValue>Transport</controllingFieldValue>
+            <valueName>Meal pre-purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accomodation</controllingFieldValue>
+            <controllingFieldValue>Hotel</controllingFieldValue>
+            <valueName>Partner tour</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accomodation</controllingFieldValue>
+            <controllingFieldValue>Hotel</controllingFieldValue>
+            <valueName>Spa purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flight</controllingFieldValue>
+            <controllingFieldValue>Rail</controllingFieldValue>
+            <controllingFieldValue>Bus</controllingFieldValue>
+            <controllingFieldValue>Ferry</controllingFieldValue>
+            <controllingFieldValue>Transport</controllingFieldValue>
+            <valueName>Added baggage</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

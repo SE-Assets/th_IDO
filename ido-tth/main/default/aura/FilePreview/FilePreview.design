@@ -1,0 +1,3 @@
+<design:component label="Record File Gallery">
+	<design:attribute name="numberOfVisibleItems" label="Number of Visible Files" default="8"></design:attribute>
+</design:component>

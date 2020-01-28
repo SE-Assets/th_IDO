@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_VIP_Traveler__c</fullName>
+    <description>The guest has been deemed to be of high importance</description>
+    <externalId>false</externalId>
+    <label>VIP Traveler</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>tth_Yes_No</valueSetName>
+    </valueSet>
+</CustomField>

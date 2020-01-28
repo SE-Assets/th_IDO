@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_MC_Journeys</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>Channel__c</columns>
+    <columns>Date_Sent__c</columns>
+    <columns>Name_of_Communication__c</columns>
+    <columns>Order__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All MC Journeys</label>
+</ListView>

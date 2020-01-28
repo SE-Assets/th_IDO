@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Next_Level__c</fullName>
+    <defaultValue>&quot;Silver&quot;</defaultValue>
+    <description>The name of the next loyalty status level this traveler can attain</description>
+    <externalId>false</externalId>
+    <label>Next Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>tth_Loyalty_Status_Levels</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Trip_Stage__c</fullName>
+    <description>Represents the current traveler&#39;s trip stage. It is a text field b/c NBA does not support multiselect picklists so if it applies to multiple recommendations, use a comma separated list and ensure Strategy filters leverage the CONTAINS formula function</description>
+    <externalId>false</externalId>
+    <label>Trip Stage</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Trip_Stage__c</fullName>
+    <defaultValue>&quot;PreTrip&quot;</defaultValue>
+    <description>Demo triggering field - Used to show where within the demo journey we are.  Used to change the &quot;state&quot; of the demo and may impact items such as Component Visibility, Trigger process builder to create needed records, provides context to the Chatbot for context specific menus</description>
+    <externalId>false</externalId>
+    <label>Trip Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>tth_Travel_Stage</valueSetName>
+    </valueSet>
+</CustomField>

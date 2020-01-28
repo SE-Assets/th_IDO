@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Thailand NYE Extravaganza!</label>
+    <protected>false</protected>
+    <values>
+        <field>Bounced__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Clicked__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Date_Sent__c</field>
+        <value xsi:type="xsd:date">2019-08-26</value>
+    </values>
+    <values>
+        <field>Opened__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">10.0</value>
+    </values>
+    <values>
+        <field>eMail_Name__c</field>
+        <value xsi:type="xsd:string">Thailand NYE Extravaganza!</value>
+    </values>
+</CustomMetadata>

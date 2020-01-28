@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Points_Redemption</fullName>
+    <active>true</active>
+    <description>A Loyalty Event of type Points Redemption must be of a negative value since it is points being spent</description>
+    <errorConditionFormula>IF(  AND( tth_Amount__c &gt;= 0,  ISPICKVAL( tth_Type__c , &quot;Points Redemption&quot;) ) , true, false)</errorConditionFormula>
+    <errorMessage>Loyalty Events of Type &quot;Points Redemption&quot; must be a negative value since points are being spent.</errorMessage>
+</ValidationRule>

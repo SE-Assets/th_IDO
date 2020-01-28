@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_preference_rental_Car_Transmission__c</fullName>
+    <description>Rental (car) preference - vehicle transmission type</description>
+    <externalId>false</externalId>
+    <label>Car Transmission</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automatic</fullName>
+                <default>true</default>
+                <label>Automatic</label>
+            </value>
+            <value>
+                <fullName>Manual</fullName>
+                <default>false</default>
+                <label>Manual</label>
+            </value>
+            <value>
+                <fullName>Don&#39;t Care</fullName>
+                <default>false</default>
+                <label>Don&#39;t Care</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Standard Travel</fullName>
+        <default>true</default>
+        <label>Standard Travel</label>
+    </customValue>
+    <customValue>
+        <fullName>Flight</fullName>
+        <default>false</default>
+        <label>Flight</label>
+    </customValue>
+    <customValue>
+        <fullName>Hotel</fullName>
+        <default>false</default>
+        <label>Hotel</label>
+    </customValue>
+    <customValue>
+        <fullName>Rental</fullName>
+        <default>false</default>
+        <label>Rental</label>
+    </customValue>
+    <customValue>
+        <fullName>Special Offer</fullName>
+        <default>false</default>
+        <label>Special Offer</label>
+    </customValue>
+    <customValue>
+        <fullName>Status Bonus</fullName>
+        <default>false</default>
+        <label>Status Bonus</label>
+    </customValue>
+    <customValue>
+        <fullName>Credit Card</fullName>
+        <default>false</default>
+        <label>Credit Card</label>
+    </customValue>
+    <customValue>
+        <fullName>Points Plus Pay</fullName>
+        <default>false</default>
+        <label>Points Plus Pay</label>
+    </customValue>
+    <customValue>
+        <fullName>Upgrade</fullName>
+        <default>false</default>
+        <label>Upgrade</label>
+    </customValue>
+    <customValue>
+        <fullName>Shopping</fullName>
+        <default>false</default>
+        <label>Shopping</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner (Other)</fullName>
+        <default>false</default>
+        <label>Partner (Other)</label>
+    </customValue>
+    <description>QiDO for TTH - Where is the loyalty event coming from?</description>
+    <masterLabel>Loyalty Event Sources</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

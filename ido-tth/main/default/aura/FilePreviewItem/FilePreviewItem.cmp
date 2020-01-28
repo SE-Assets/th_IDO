@@ -1,0 +1,100 @@
+<aura:component access="global" >
+    <aura:attribute name="isOverflow" type="boolean" default="false"></aura:attribute>
+    <aura:attribute name="overflowNumber" type="Integer" default="0"></aura:attribute>
+    <aura:attribute name="document" type="ContentDocument"></aura:attribute>
+    <aura:attribute name="documentIds" type="string[]"></aura:attribute>
+    <div class="slds-size--1-of-2 slds-medium-size--1-of-3 slds-large-size--1-of-4">
+        <figure class="slds-image slds-image--card">
+            <a href="javascript:void(0);" class="slds-image__crop slds-image__crop--1-by-1"  onclick="{! c.openFile }">
+                <aura:if isTrue="{!v.isOverflow}">
+                    <div class="slds-image--overlay"></div>
+                </aura:if>
+                <aura:if isTrue="{!v.document.ContentDocument.FileType == 'JPG' || v.document.ContentDocument.FileType == 'PNG' || v.document.ContentDocument.FileType == 'GIF' || v.document.ContentDocument.FileType == 'JPEG'}">
+
+                    <img src="{!$SfdcSite.pathPrefix + '/sfc/servlet.shepherd/version/download/' + v.document.ContentDocument.LatestPublishedVersionId}"
+                         alt="{!v.document.ContentDocument.Title}" />
+                    <aura:set attribute="else" >
+                        <aura:if isTrue="{!v.document.ContentDocument.FileExtension == 'ppt' || v.document.ContentDocument.FileExtension == 'pptx'}">
+                            <lightning:icon iconName="doctype:ppt" size="large"
+                                            class="slds-image__icon slds-icon_container "></lightning:icon>
+                            <aura:set attribute="else" >
+                                <aura:if isTrue="{!v.document.ContentDocument.FileExtension == 'dot' || v.document.ContentDocument.FileExtension == 'docx'}">
+                                    <lightning:icon iconName="doctype:word" size="large"
+                                                    class="slds-image__icon slds-icon_container "></lightning:icon>
+
+                                    <aura:set attribute="else" >
+                                        <aura:if isTrue="{!v.document.ContentDocument.FileExtension == 'xls' || v.document.ContentDocument.FileExtension == 'xlsx'}">
+                                            <lightning:icon iconName="doctype:excel" size="large"
+                                                            class="slds-image__icon slds-icon_container "></lightning:icon>
+
+                                            <aura:set attribute="else" >
+                                                <aura:if isTrue="{!v.document.ContentDocument.FileType == 'UNKNOWN'}">
+                                                    <lightning:icon iconName="doctype:unknown" size="large"
+                                                                    class="slds-image__icon slds-icon_container "></lightning:icon>
+                                                    <aura:set attribute="else" >
+                                                        <lightning:icon iconName="{! 'doctype:' + v.document.ContentDocument.FileExtension}"
+                                                                        size="large"
+                                                                        class="slds-image__icon slds-icon_container "></lightning:icon>
+                                                    </aura:set>
+                                                </aura:if>
+                                            </aura:set>
+                                        </aura:if>
+                                    </aura:set>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                    </aura:set>
+                </aura:if>
+            </a>
+            <aura:if isTrue="{!v.isOverflow}">
+                <figcaption class="slds-image__title slds-image__title--overlay slds-align--absolute-center slds-text-heading--large">
+                    <span class="slds-image__text slds-truncate">{!v.overflowNumber}+
+                        <span class="slds-assistive-text">more files</span>
+                    </span>
+                </figcaption>
+                <aura:set attribute="else" >
+                    <lightning:buttonGroup class="slds-button-group slds-image__actions" >
+                        <button class="slds-button slds-button--icon-border-filled" title="Download">
+                            <a href="{!$SfdcSite.pathPrefix + '/sfc/servlet.shepherd/version/download/' + v.document.ContentDocument.LatestPublishedVersionId}" download="{!v.document.ContentDocument.Title}">
+                                <lightning:icon iconName="utility:download" class="slds-button__icon" size="xx-small"/>
+                            </a>
+                        </button>
+                    </lightning:buttonGroup>
+                    <figcaption class="slds-image__title slds-image__title--card">
+                        <aura:if isTrue="{!v.document.ContentDocument.FileType == 'JPG' || v.document.ContentDocument.FileType == 'PNG' || v.document.ContentDocument.FileType == 'GIF' || v.document.ContentDocument.FileType == 'JPEG'}">
+                            <lightning:icon iconName="doctype:image" size="x-small" class="slds-m-right--x-small "></lightning:icon>
+
+                            <aura:set attribute="else" >
+                                <aura:if isTrue="{!v.document.ContentDocument.FileExtension == 'ppt' || v.document.ContentDocument.FileExtension == 'pptx'}">
+                                    <lightning:icon iconName="doctype:ppt" size="x-small" class="slds-m-right--x-small "></lightning:icon>
+                                    <aura:set attribute="else" >
+                                        <aura:if isTrue="{!v.document.ContentDocument.FileExtension == 'dot' || v.document.ContentDocument.FileExtension == 'docx'}">
+                                            <lightning:icon iconName="doctype:word" size="x-small" class="slds-m-right--x-small "></lightning:icon>
+
+                                            <aura:set attribute="else" >
+                                                <aura:if isTrue="{!v.document.ContentDocument.FileExtension == 'xls' || v.document.ContentDocument.FileExtension == 'xlsx'}">
+                                                    <lightning:icon iconName="doctype:excel" size="x-small" class="slds-m-right--x-small "></lightning:icon>
+
+                                                    <aura:set attribute="else" >
+                                                        <aura:if isTrue="{!v.document.ContentDocument.FileType == 'UNKNOWN'}">
+                                                            <lightning:icon iconName="doctype:unknown" size="x-small" class="slds-m-right--x-small "></lightning:icon>
+                                                            <aura:set attribute="else" >
+                                                                <lightning:icon iconName="{! 'doctype:' + v.document.ContentDocument.FileExtension}"
+                                                                                class="slds-m-right--x-small " size="x-small"></lightning:icon>
+                                                            </aura:set>
+                                                        </aura:if>
+                                                    </aura:set>
+                                                </aura:if>
+                                            </aura:set>
+                                        </aura:if>
+                                    </aura:set>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                        <span class="slds-image__text slds-truncate" title="Image Title">{!v.document.ContentDocument.Title}</span>
+                    </figcaption>
+                </aura:set>
+            </aura:if>
+        </figure>
+    </div>
+</aura:component>

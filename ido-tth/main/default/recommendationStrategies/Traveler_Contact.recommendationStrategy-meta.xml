@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Contact</contextRecordType>
+    <filter>
+        <childNode>Pre_Trip</childNode>
+        <childNode>Load_On_Trip_Disruptions</childNode>
+        <childNode>OnTrip_SmoothTravels</childNode>
+        <label>Traveler Stage</label>
+        <name>Traveler_Stage</name>
+        <expression>CONTAINS(tth_Trip_Stage__c, TEXT($Record.tth_Trip_Stage__c)) &amp;&amp; CONTAINS(tth_Trip_Sub_Stage__c, TEXT($Record.tth_Trip_Sub_Stage__c))</expression>
+    </filter>
+    <filter>
+        <childNode>PostTrip</childNode>
+        <childNode>Mobile_App_Install</childNode>
+        <label>Check if mobile app installed</label>
+        <name>Check_if_mobile_app_installed</name>
+        <expression>$Record.tth_Mobile_App_Installed__c = false &amp;&amp; TEXT($Record.tth_Trip_Sub_Stage__c) != &#39;Experiencing Disruption&#39;</expression>
+    </filter>
+    <filter>
+        <childNode>Traveler_Profile</childNode>
+        <label>Profile Completion Percentage</label>
+        <name>Profile_Completion_Percentage</name>
+        <expression>$Record.tth_Profile_completion__c &lt;= 0.75 &amp;&amp; TEXT($Record.tth_Trip_Sub_Stage__c) != &#39;Experiencing Disruption&#39;</expression>
+    </filter>
+    <invocableAction>
+        <label>Load On Trip Disruptions</label>
+        <name>Load_On_Trip_Disruptions</name>
+        <action>tth_NBA_Generate_TripDisruption</action>
+        <argument>
+            <name>tripId</name>
+            <value>$Record.tth_Next_Trip__c</value>
+        </argument>
+        <argument>
+            <name>travelerContactId</name>
+            <value>$Record.ID</value>
+        </argument>
+        <isGenerator>true</isGenerator>
+        <type>apex</type>
+    </invocableAction>
+    <label>Traveler - Contact</label>
+    <recommendationLoad>
+        <label>Pre Trip</label>
+        <name>Pre_Trip</name>
+        <condition>
+            <field>tth_Trip_Stage__c</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>PreTrip</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>OnTrip-SmoothTravels</label>
+        <name>OnTrip_SmoothTravels</name>
+        <condition>
+            <field>tth_Trip_Stage__c</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>OnTrip</value>
+            </value>
+        </condition>
+        <condition>
+            <field>tth_Trip_Sub_Stage__c</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Smooth Travels</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>PostTrip</label>
+        <name>PostTrip</name>
+        <condition>
+            <field>tth_Trip_Stage__c</field>
+            <operator>CONTAINS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>PostTrip</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Mobile App Install</label>
+        <name>Mobile_App_Install</name>
+        <condition>
+            <field>Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>MobileApp</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Traveler Profile</label>
+        <name>Traveler_Profile</name>
+        <condition>
+            <field>Category__c</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>ProfileInfo</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+    </recommendationLoad>
+    <sort>
+        <childNode>Branches</childNode>
+        <label>Sort on Ranking</label>
+        <name>Sort_on_Ranking</name>
+        <field>
+            <name>Ranking__c</name>
+            <nullsFirst>true</nullsFirst>
+            <order>Asc</order>
+        </field>
+    </sort>
+    <union>
+        <childNode>Sort_on_Ranking</childNode>
+        <label>Output</label>
+        <name>Output_98dc0744620f442abb673a78b34dfd20</name>
+    </union>
+    <union>
+        <childNode>Traveler_Stage</childNode>
+        <childNode>Check_if_mobile_app_installed</childNode>
+        <childNode>Profile_Completion_Percentage</childNode>
+        <label>Branches</label>
+        <name>Branches</name>
+    </union>
+</RecommendationStrategy>

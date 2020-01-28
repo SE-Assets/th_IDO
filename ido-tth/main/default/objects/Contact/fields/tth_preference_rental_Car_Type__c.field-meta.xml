@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_preference_rental_Car_Type__c</fullName>
+    <description>Rental (car) preference - car size</description>
+    <externalId>false</externalId>
+    <label>Car Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Economy Car</fullName>
+                <default>true</default>
+                <label>Economy Car</label>
+            </value>
+            <value>
+                <fullName>Compact Car</fullName>
+                <default>false</default>
+                <label>Compact Car</label>
+            </value>
+            <value>
+                <fullName>Intermediate Car</fullName>
+                <default>false</default>
+                <label>Intermediate Car</label>
+            </value>
+            <value>
+                <fullName>Standard Car</fullName>
+                <default>false</default>
+                <label>Standard Car</label>
+            </value>
+            <value>
+                <fullName>Full-size Car</fullName>
+                <default>false</default>
+                <label>Full-size Car</label>
+            </value>
+            <value>
+                <fullName>Intermediate SUV</fullName>
+                <default>false</default>
+                <label>Intermediate SUV</label>
+            </value>
+            <value>
+                <fullName>Standard SUV</fullName>
+                <default>false</default>
+                <label>Standard SUV</label>
+            </value>
+            <value>
+                <fullName>Any Car Class</fullName>
+                <default>false</default>
+                <label>Any Car Class</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

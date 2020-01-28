@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Summary__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(TEXT(tth_Vibe__c)),&#39;&#39;, IMAGE(&#39;/resource/tth_trip_filter_icons/vibe/&#39; +  TEXT(tth_Vibe__c)  + &#39;.png&#39;, TEXT(tth_Vibe__c) , 50, 50)) &amp;
+
+IF(ISBLANK(TEXT(tth_Vibe__c)),&#39;&#39;,IMAGE(&#39;/resource/tth_trip_filter_icons/activities/&#39; +  TEXT(tth_Activities__c)  + &#39;.png&#39;, TEXT(tth_Activities__c) , 50, 50)) &amp;
+
+IF(ISBLANK(TEXT(tth_Vibe__c)),&#39;&#39;,IMAGE(&#39;/resource/tth_trip_filter_icons/geography/&#39; +  TEXT(tth_Geography__c)  + &#39;.png&#39;, TEXT(tth_Geography__c) , 50, 50)) &amp;
+
+IF(ISBLANK(TEXT(tth_Vibe__c)),&#39;&#39;,IMAGE(&#39;/resource/tth_trip_filter_icons/weather/&#39; +  TEXT(tth_Weather__c)  + &#39;.png&#39;, TEXT(tth_Weather__c) , 50, 50)) &amp;
+
+IF(ISBLANK(TEXT(tth_Vibe__c)),&#39;&#39;,IMAGE(&#39;/resource/tth_trip_filter_icons/budget/&#39; +  TEXT(tth_Budget__c)  + &#39;.png&#39;, TEXT(tth_Budget__c) , 50, 50))</formula>
+    <label>Summary</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

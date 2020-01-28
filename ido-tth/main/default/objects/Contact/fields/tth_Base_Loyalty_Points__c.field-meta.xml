@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tth_Base_Loyalty_Points__c</fullName>
+    <defaultValue>25000</defaultValue>
+    <description>Not shown but used as the lowest level of points on top of which all loyalty calculations will occur</description>
+    <externalId>false</externalId>
+    <label>Base Loyalty Points</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

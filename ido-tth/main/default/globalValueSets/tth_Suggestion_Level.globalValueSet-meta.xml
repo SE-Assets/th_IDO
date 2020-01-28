@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Trip</fullName>
+        <default>true</default>
+        <label>Trip</label>
+    </customValue>
+    <customValue>
+        <fullName>Booking</fullName>
+        <default>false</default>
+        <label>Booking</label>
+    </customValue>
+    <description>Is this suggestion at the trip or booking level?</description>
+    <masterLabel>Suggestion Level</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
