@@ -30,6 +30,8 @@ STARTTIME=$(date +%s)
 
 ./scripts/bash/installDependencies.sh "$SFDXALIAS"
 
+sfdx shane:github:package:install -g kakermanis -r sdo-dependencies
+
 ./scripts/bash/pushLocalSource.sh "$SFDXALIAS"
 
 
@@ -46,7 +48,6 @@ STARTTIME=$(date +%s)
 ./scripts/bash/applyPermSets.sh tth_Customer_360_Features $SFDXALIAS
 ./scripts/bash/applyPermSets.sh tth_NBA_Permissions $SFDXALIAS
 ./scripts/bash/applyPermSets.sh TTH_SDO_Tools_Extensions $SFDXALIAS
-./scripts/bash/applyPermSets.sh TTH_MasterBuild_Perms $SFDXALIAS
 
 if [ "$DEPLOYDP" == 'n' ]; then
   echo
@@ -64,24 +65,25 @@ if [ "$DEPLOYDP" == 'y' ]; then
   ./scripts/bash/loadProdData.sh $USRNAME $SCRATCH_PWD https://test.salesforce.com
 
   # EDIT - run any custom annon APEX scripts you need post data load
-  sfdx force:apex:execute -f scripts/apex/applyBookingImages.apex -u $SFDXALIAS
-  sfdx force:apex:execute -f scripts/apex/applyNBAIcons.apex -u $SFDXALIAS
+
+
 fi
 
+sfdx force:apex:execute -f scripts/apex/applyBookingImages.apex -u $SFDXALIAS
+sfdx force:apex:execute -f scripts/apex/applyNBAIcons.apex -u $SFDXALIAS
 # EDIT - run any other post installation scripts you need
-#sfdx shane:theme:activate -n THDark -u $SFDXALIAS
+sfdx shane:theme:activate -n THDark -u $SFDXALIAS
 
 ENDTIME=$(date +%s)
+BUILD_TIME_SEC=$(($ENDTIME - $STARTTIME))
 
 echo
 echo '************************************************************************'
-echo "Build took $(($ENDTIME - $STARTTIME)) seconds to complete..."
+echo "Build took $(BUILD_TIME_SEC) seconds to complete..."
 echo '************************************************************************'
 echo
 
-
-CURDATE=$(date +"%m/%d/%Y %H:%M")
-echo "Uber Build,$CURDATE,$(($ENDTIME - $STARTTIME))"  >> logs/buildTimes.csv
+./scripts/bash/buildLog.sh DevHub $BUILD_TIME_SEC "Uber-ido-build"
 
 echo
 echo '******************'
