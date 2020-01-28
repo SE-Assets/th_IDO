@@ -8,7 +8,8 @@ if [ -f "$DL_JAR_FILE" ]; then
   read -p 'Org Default Password: ' DX_PASS
 
   if [ -f "$DL_KEY_FILE" ]; then
-  #    echo "Dataloader PWD Keyfile $DL_KEY_FILE exists"
+      echo 
+      echo "Dataloader PWD Keyfile $DL_KEY_FILE exists"
   echo ''
   else
       echo "...Dataloader PWD Keyfile $DL_KEY_FILE does not exist. Generating one for you"
