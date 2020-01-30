@@ -79,7 +79,7 @@ BUILD_TIME_SEC=$(($ENDTIME - $STARTTIME))
 
 echo
 echo '************************************************************************'
-echo "Build took $(BUILD_TIME_SEC) seconds to complete..."
+echo "Build took $BUILD_TIME_SEC seconds to complete..."
 echo '************************************************************************'
 echo
 
