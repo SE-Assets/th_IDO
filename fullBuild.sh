@@ -13,8 +13,10 @@ DEFAULTPWD=$DX_DEF_PWD
 
 # Encrypt the default password
 ENCRYPT_RESULT=$(java -cp bin/dataloader/dataloader.jar com.salesforce.dataloader.security.EncryptionUtil -e $DEFAULTPWD data/prod/config/login.key | sed -n '1!p')
+
 #Remove any whitespace
 ENCRYPT_RESULT="$(echo -e "${ENCRYPT_RESULT}" | sed -e 's/^[[:space:]]*//')"
+echo 'using encrypted PWD of '$ENCRYPT_RESULT''
 
 SCRATCH_PWD=$ENCRYPT_RESULT
 
@@ -30,9 +32,10 @@ STARTTIME=$(date +%s)
 
 ./scripts/bash/installDependencies.sh "$SFDXALIAS"
 
-sfdx shane:github:package:install -g kakermanis -r sdo-dependencies
+./scripts/bash/installFromGithub.sh kakermanis sdo-dependencies
 
 ./scripts/bash/pushLocalSource.sh "$SFDXALIAS"
+
 
 
 # EDIT to apply an permission sets that are specific to your scratch org...
@@ -48,6 +51,7 @@ sfdx shane:github:package:install -g kakermanis -r sdo-dependencies
 ./scripts/bash/applyPermSets.sh tth_Customer_360_Features $SFDXALIAS
 ./scripts/bash/applyPermSets.sh tth_NBA_Permissions $SFDXALIAS
 ./scripts/bash/applyPermSets.sh TTH_SDO_Tools_Extensions $SFDXALIAS
+./scripts/bash/applyPermSets.sh TTH_SDO_Dependencies_Perms $SFDXALIAS
 
 if [ "$DEPLOYDP" == 'n' ]; then
   echo
@@ -65,12 +69,13 @@ if [ "$DEPLOYDP" == 'y' ]; then
   ./scripts/bash/loadProdData.sh $USRNAME $SCRATCH_PWD https://test.salesforce.com
 
   # EDIT - run any custom annon APEX scripts you need post data load
-
-
+  ./scripts/bash/runApexScript.sh "scripts/apex/applyBookingImages.apex" $SFDXALIAS
 fi
 
-sfdx force:apex:execute -f scripts/apex/applyBookingImages.apex -u $SFDXALIAS
-sfdx force:apex:execute -f scripts/apex/applyNBAIcons.apex -u $SFDXALIAS
+./scripts/bash/runApexScript.sh "scripts/apex/applyNBAIcons.apex" $SFDXALIAS
+
+#sfdx force:apex:execute -f scripts/apex/applyBookingImages.apex -u $SFDXALIAS
+#sfdx force:apex:execute -f scripts/apex/applyNBAIcons.apex -u $SFDXALIAS
 # EDIT - run any other post installation scripts you need
 sfdx shane:theme:activate -n THDark -u $SFDXALIAS
 
