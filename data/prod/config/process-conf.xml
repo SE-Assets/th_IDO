@@ -16,7 +16,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthPersonAccountUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -46,7 +46,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthAccountUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -76,7 +76,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthContactUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -106,7 +106,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthTripsUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -139,7 +139,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthBookingUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -173,7 +173,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthPartyUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -206,7 +206,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthLoyaltyUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -239,7 +239,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthBaggageUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -272,7 +272,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthcustomActivitiesUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -305,7 +305,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthCaseUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -338,7 +338,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthCampaignUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -371,7 +371,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthContentVersionUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -404,7 +404,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthSuggestedBookingUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -434,7 +434,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthRecommendationUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
@@ -465,7 +465,7 @@
                 <entry key="process.outputError" value="data/prod/dataLoadResults/tthRecommendationUpsertErrors.csv"/>
                 <entry key="process.enableExtractStatusOutput" value="false"/>
                 <entry key="process.statusOutputDirectory" value="bin/dataloader/outputs"/>
-                <entry key="process.encryptionKeyFile" value="bin/dataloader/configs/login.key"/>
+                <entry key="process.encryptionKeyFile" value="data/prod/config/login.key"/>
                 <entry key="sfdc.timeoutSecs" value="600"/>
                 <entry key="sfdc.loadBatchSize" value="200"/>
                 <entry key="sfdc.externalIdField" value="External_ID__c"/>
